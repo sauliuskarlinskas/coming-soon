@@ -50,12 +50,14 @@
 .footer .trio p+p::before {
     content:'' ;
     display: block;
-    width: 3px;
+    width: 2px;
     height: 20px;
     background-color:rgb(255, 255, 255, 0.5);
     position: absolute;
-    left: -17px;
-    bottom: 5px;
+    left: -15px;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+   
 
 }
 .footer .trio > p{
