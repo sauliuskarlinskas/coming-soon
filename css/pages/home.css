@@ -2,6 +2,8 @@
 @import '../base/layout.css';
 @import '../components/footer.css';
 @import '../3rd-party/font-awesome.min.css';
+@import '../components/clock.css';
+@import '../components/mouse.css';
 
 .hero {
     min-height: 100vh;
