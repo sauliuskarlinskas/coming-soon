@@ -30,7 +30,7 @@
     opacity: 0;
    }
 }
-.track {
+ /* .track {
     font-size: 5px;
     width: 10em;
     height: 16em;
@@ -58,3 +58,4 @@
    50% {top: 14.7em; left: 7.4em;}
    75% {top: 14.7em; left: -1.3em;}
 }
+/*
