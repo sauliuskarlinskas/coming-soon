@@ -13,7 +13,7 @@
 .container > .row {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
+    width: 100%;
     gap: 60px 0;
 }
 .container > .row > .column {

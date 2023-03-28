@@ -30,3 +30,31 @@
     opacity: 0;
    }
 }
+.track {
+    font-size: 5px;
+    width: 10em;
+    height: 16em;
+    border: 1.3em solid white;
+    position: relative;
+}
+.track::after {
+    content: '';
+    display: block;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -1.3em;
+    transform: translateX(-100%);
+    transform: translateY(-100%);
+    animation-name: race;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes race {
+   0% {top: 0; left: -1.3em}
+   25% {top:0; left:7.4em;}
+   50% {top: 14.7em; left: 7.4em;}
+   75% {top: 14.7em; left: -1.3em;}
+}
