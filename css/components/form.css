@@ -1,0 +1,65 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+
+.form label{
+    display: none;
+}
+
+.form > .input,
+.form > .textarea,
+.email-form {
+    width: 100%;
+    padding: 0.5em 0.1em;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 1em;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.form > .input {
+    width: calc(50% - 15px);
+}
+.form > .textarea {
+    resize: vertical;
+    min-height: 100px;
+    height: 150px;
+    max-height: 400px;
+}
+
+.form ::placeholder {
+    color: #777;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.form :focus-visible {
+    outline-color: #777;
+}
+.hero .form.subscription {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+.hero .form.subscription > .input.subscription {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    border-color: #fff;
+    font-size: 18px;
+    color: #fff;
+}
+.hero form.subscription ::placeholder {
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .form > .input {
+        width: 100%;
+    }
+}
+
+    

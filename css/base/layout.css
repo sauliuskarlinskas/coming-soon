@@ -11,8 +11,22 @@
     width: 600px;
 }
 .container > .row {
+    display: flex;
+    justify-content: space-between;
     width: 1000px;
+    gap: 60px 0;
 }
+.container > .row > .column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+}
+
+.container .column .right {
+    width: 40%;
+}
+
 @media (max-width: 1100px) {
     .container > .row {
         width:800px ;
@@ -20,7 +34,11 @@
  }
  @media (max-width: 900px) {
     .container > .row {
+        flex-direction: column;
         width:600px ;
+    }
+    .container > .row > .column {
+       width: 100%;
     }
  }
  @media (max-width: 700px) {

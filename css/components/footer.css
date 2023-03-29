@@ -1,0 +1,84 @@
+.footer {
+    padding-top: 0;
+}
+.footer-logo {
+    height: 40px;
+    margin: 40px;
+}
+.footer .socials  {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px; 
+}
+.footer .socials > .social {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.footer .socials > .social:hover {
+    background-color: white;
+    color: #03a9f4;
+}
+.footer .row {
+    position: relative;
+}
+.back-to-top {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+}
+.footer > .short-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.5);
+    line-height: 1.8em;
+}
+.footer > .short-row a{
+    color: white;
+    
+}
+.footer .trio {
+    display: flex;
+    gap: 0 30px;
+}
+.footer .trio p{
+    position: relative;
+}
+.footer .trio p+p::before {
+    content:'';
+    display:inline-block;
+    width: 2px;
+    height: 20px;
+    background-color:rgb(255, 255, 255, 0.5);
+    position: absolute;
+    left: -15px;
+    top:50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+@media (max-width: 700px) {
+    .footer .trio{
+        flex-direction: column;
+    }
+    .footer .trio p+p::before {
+      display: none;
+    }
+    .back-to-top {
+        display: none;
+    }
+}

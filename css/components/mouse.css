@@ -1,0 +1,61 @@
+.mouse {
+    font-size: 3px;
+    width: 10em;
+    height: 16em;
+    border: 1.3em solid white;
+    border-radius: 5em;
+    position: relative;
+}
+.mouse::after {
+    content: '';
+    display: block;
+    width: 1.3em;
+    height: 2em;
+    background-color: white;
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: scrolling;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes scrolling {
+   0%{
+    top: 2em;
+    opacity: 1;
+   }
+   100% {
+    top: 9em;
+    opacity: 0;
+   }
+}
+ /* .track {
+    font-size: 5px;
+    width: 10em;
+    height: 16em;
+    border: 1.3em solid white;
+    position: relative;
+}
+.track::after {
+    content: '';
+    display: block;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -1.3em;
+    transform: translateX(-100%);
+    transform: translateY(-100%);
+    animation-name: race;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes race {
+   0% {top: 0; left: -1.3em}
+   25% {top:0; left:7.4em;}
+   50% {top: 14.7em; left: 7.4em;}
+   75% {top: 14.7em; left: -1.3em;}
+}
+/*
