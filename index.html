@@ -33,6 +33,11 @@
                     <div class="label">Seconds</div>
                   </div>  
                 </div>
+                <form class="form subscription">
+                    <label for="email">Type your email</label>
+                    <input id="email" class="input subscription" type="email" placeholder="Type your email">
+                </form>
+                <button class="btn btn-main" type="submit" >Subscribe Now</button>
                 <div class="mouse"></div>
                 <!-- <div class="track"></div> !-->
             </div>
@@ -70,24 +75,36 @@
                       </div>
                   </div>
               </div>
-             <div class="column right">
-                <h2 class="content-title">Have any qestion?</h2>
-                <p class="content-description">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. <a href="mailto:info@matrox.xyz">info@matrox.xyz</a> Illo, dolore.  
-                </p>
-             </div>
+                <div id="question" class="column right">
+                    <h2 class="content-title">Have any qestion?</h2>
+                    <p class="content-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. <a href="mailto:info@matrox.xyz">info@matrox.xyz</a> Illo, dolore.  
+                    </p>
+                    <form class="form">
+                        <label for="name">Name</label>
+                        <input id="name" class="input" type="text" placeholder="Name">
+                        <label for="email">Email</label>
+                        <input id="email" class="input" type="email" placeholder="Email">
+                        <label for="message">Message</label>
+                        <textarea class="textarea" name="" id="message" placeholder="Message"></textarea>
+                        <button class="btn" type="submit">Send message</button>
+                    </form>   
+                </div>
             </div>  
         </section>
     </main>
     <footer class="container bg-main footer">
-        <div class="row socials">
-           <a href="./" target="_blank" class="social fa fa-facebook"></a>
-           <a href="./" target="_blank" class="social fa fa-twitter"></a>
-           <a href="./" target="_blank" class="social fa fa-dribbble"></a>
-           <a href="./" target="_blank" class="social fa fa-tumblr"></a>  
-           <a href="./" target="_blank" class="social fa fa-linkedin"></a>  
-           <a href="./" target="_blank" class="social fa fa-instagram"></a>  
-           <a href="./" target="_blank" class="social fa fa-rss"></a>  
+        <div class="row">
+            <div class="socials">
+                <a href="./" target="_blank" class="social fa fa-facebook"></a>
+                <a href="./" target="_blank" class="social fa fa-twitter"></a>
+                <a href="./" target="_blank" class="social fa fa-dribbble"></a>
+                <a href="./" target="_blank" class="social fa fa-tumblr"></a>  
+                <a href="./" target="_blank" class="social fa fa-linkedin"></a>  
+                <a href="./" target="_blank" class="social fa fa-instagram"></a>  
+                <a href="./" target="_blank" class="social fa fa-rss"></a>
+           </div>
+           <a href="#" class="btn btn-icon back-to-top fa fa-angle-up"></a>  
         </div>  
         <div class="short-row">
             <img class="footer-logo" src="./images/white-logo.png" alt="Logo">

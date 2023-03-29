@@ -6,12 +6,14 @@
     margin: 40px;
 }
 .footer .socials  {
-  flex-direction: row; 
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  border-bottom: 1px solid white;
-  padding: 10px; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 10px; 
 }
 .footer .socials > .social {
     width: 50px;
@@ -27,6 +29,14 @@
 .footer .socials > .social:hover {
     background-color: white;
     color: #03a9f4;
+}
+.footer .row {
+    position: relative;
+}
+.back-to-top {
+    position: absolute;
+    top: -1em;
+    right: 1em;
 }
 .footer > .short-row {
     display: flex;
@@ -44,12 +54,13 @@
 .footer .trio {
     display: flex;
     gap: 0 30px;
-   position: relative;
-    
+}
+.footer .trio p{
+    position: relative;
 }
 .footer .trio p+p::before {
-    content:'' ;
-    display: block;
+    content:'';
+    display:inline-block;
     width: 2px;
     height: 20px;
     background-color:rgb(255, 255, 255, 0.5);
@@ -57,18 +68,17 @@
     left: -15px;
     top:50%;
     transform: translateY(-50%) translateX(-50%);
-   
-
-}
-.footer .trio > p{
-    position: relative;
 }
 
-@media (max-width:700px) {
+
+@media (max-width: 700px) {
     .footer .trio{
         flex-direction: column;
     }
     .footer .trio p+p::before {
       display: none;
+    }
+    .back-to-top {
+        display: none;
     }
 }
